@@ -173,24 +173,24 @@ ol {
 
 }
 
-.search-form__checkbox:checked~.search-form__pseudo-checkbox::before {
-  position: absolute;
-  inset: 1px 1px;
-  content: '';
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-color: currentColor;
-}
-
 .search-form__pseudo-checkbox {
-  position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 19px;
   height: 19px;
   background-color: transparent;
   border: currentColor solid 1px;
+}
+
+.search-form__checkbox:checked~.search-form__pseudo-checkbox::before {
+  content: '';
+  display: inline-block;
+  align-self: center;
+  width: 17px;
+  height: 17px;
+  background-color: currentColor;
+  border: black solid 1px
+  
 }
 
 .search-form__submit-button {
