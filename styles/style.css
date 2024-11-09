@@ -41,7 +41,7 @@ ol {
 }
 
 .visually-hidden {
-  position: absolute;
+  position: fixed;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -52,7 +52,7 @@ ol {
 }
 
 .preloader-template {
-  position: absolute;
+  position: fixed;
   inset: 0;
 }
 
@@ -185,7 +185,6 @@ ol {
 .search-form__checkbox:checked~.search-form__pseudo-checkbox::before {
   content: '';
   display: inline-block;
-  align-self: center;
   width: 17px;
   height: 17px;
   background-color: currentColor;
